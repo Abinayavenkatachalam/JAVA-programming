@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        
+        if(m<=7){
+            if(m==1){
+                System.out.println("Monday");
+            }
+            else if(m==2){
+                System.out.println("Tuesday");
+            }
+             else if(m==3){
+                System.out.println("Wednesday");
+            }
+             else if(m==4){
+                System.out.println("Thursday");
+            }
+             else if(m==5){
+                System.out.println("Friday");
+            }
+             else if(m==6){
+                System.out.println("Saturday");
+            }
+            else{
+                System.out.println("Sunday");
+            }
+        }else{
+            System.out.println("Enter a valid Input");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
