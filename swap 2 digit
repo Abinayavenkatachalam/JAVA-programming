@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+                if(m>=10){
+                    char s1= String.valueOf(m).charAt(0);
+                     char s2= String.valueOf(m).charAt(1);
+                    System.out.print(s2);
+                    System.out.print(s1);
+                    
+                    
+                }
+        else{
+            System.out.println("STDOUT");
+        }
+        
+    }
+}
