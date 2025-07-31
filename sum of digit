@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int m =sc.nextInt();
+        int count=0;
+        int z=m;
+        while(z!=0){
+            z/=10;
+            count++;
+        }
+        if(count>2){
+            int sum=0;
+            int flag=m;
+            while(m!=0){
+                int x=m%10;
+                sum+=x;
+                m/=10;
+            }
+            System.out.println("Sum of digit is "+sum);
+            
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+        
+    }
+}
