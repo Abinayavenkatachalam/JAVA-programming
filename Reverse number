@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        long m =sc.nextLong();
+        if(m>=1 && m<10000000000000L){
+            while(m!=0){
+                long x=m%10;
+                System.out.print(x);
+                m/=10;
+            }
+        }else{
+            System.out.println("Invalid Input ");
+        }
+        
+        
+    
+    }
+}
