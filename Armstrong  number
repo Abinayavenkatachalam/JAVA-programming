@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner (System.in);
+        int m =sc.nextInt();
+        int flag=m;
+        int ams=0;
+        if(m>=100 && m<=999){
+        while(m!=0){
+            int x = m%10;
+            ams=ams+x*x*x;
+            m/=10;
+            
+            
+        }
+        if(ams==flag){
+            System.out.println("Yes");
+        }
+        }
+        else{
+            System.out.println("No");
+}
+        
+    }
+}
