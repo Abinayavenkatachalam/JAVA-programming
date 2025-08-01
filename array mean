@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner sc = new Scanner (System.in);
+        int m = sc.nextInt();
+        int s=0;
+        int arr[]=new int[m];
+        for(int i=0;i<m;i++){
+            arr[i]=sc.nextInt();
+            
+        }
+       for(int i =0;i<m;i++){
+           s+=arr[i];
+       }
+        System.out.printf("Array Mean Value is %.2f",(float)s/m);
+    }
+}
